@@ -32,11 +32,11 @@
         --w: 30px;
       }
       .container {
-        height: calc(var(--w) * 5);
-        width: calc(var(--w) * 5);
+        height: calc(var(--w) * 8);
+        width: calc(var(--w) * 8);
         padding: var(--w);
         box-shadow: 0 12px 20px 6px rgb(104 112 118 / 0.2);
-        border-radius: calc(var(--w) / 2);
+        border-radius: calc(60px/ 2);
         display: flex;
         flex-wrap: wrap;
         transform-style: preserve-3d;
@@ -44,13 +44,13 @@
       }
 
       .square {
-        height: var(--w);
-        width: var(--w);
+        height:60px;
+        width: 60px;
         background-color: rgb(207, 52, 40);
         position: relative;
         transform-style: preserve-3d;
         transform: translateZ(var(--w));
-        box-shadow: calc(var(--w) * 3) calc(var(--w) * 3) 15px
+        box-shadow: calc(60px* 3) calc(60px * 3) 15px
           rgba(0, 0, 0, 0.2);
         animation: beating 1s infinite;
         animation-delay: calc(0.05s * var(--d));
@@ -64,8 +64,8 @@
       .square:before {
         content: '';
         position: absolute;
-        height: var(--w);
-        width: var(--w);
+        height: 60px;
+        width: 60px;
         left: 0;
         top: 0;
       }
